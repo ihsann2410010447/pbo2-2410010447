@@ -4,6 +4,8 @@
  */
 package id.ac.uniska.pbo2.p02;
 
+import java.util.List;
+
 /**
  *
  * @author User
@@ -14,6 +16,8 @@ Perpustakaan perpus = new Perpustakaan();
 perpus.tambah(new Buku("B001", "Laskar Pelangi", 2005, "Andrea Hirata"));
 perpus.tambah(new Buku("B002", "Clean Code", 2008, "Robert C. Martin"));
 perpus.tambah(new Majalah("M001", "Majalah Teknologi Kita", 2026, "Agustus"));
+perpus.tambah(new Skripsi("S001", "Sistem Informasi Perpustakaan Mini", 2023,
+"Siti Rahmah", "Teknik Informatika"));
 Anggota siti = new Anggota("2410010123", "Siti Rahmah");
 Anggota budi = new Anggota("2410010456", "Budi Santoso");
 tampilkanDaftar(perpus);
@@ -28,6 +32,9 @@ cetakKembali(perpus, "M001", 3);
 System.out.println();
 System.out.println("Koleksi tersedia: " + perpus.jumlahTersedia()
 + " dari " + perpus.getDaftarKoleksi().size());
+System.out.println();
+cetakPencarian(perpus, "code");
+cetakPinjam(perpus, "S001", siti);
 }
 private static void tampilkanDaftar(Perpustakaan perpus) {
 System.out.println("=== Daftar Koleksi ===");
@@ -44,5 +51,12 @@ private static void cetakKembali(Perpustakaan perpus, String kode, int hariTerla
 long denda = perpus.kembalikan(kode, hariTerlambat);
 System.out.println("Pengembalian " +   kode + " terlambat " + hariTerlambat
 + " hari, denda Rp" + denda);
-}  
+}
+private static void cetakPencarian(Perpustakaan perpus, String kataKunci) {
+List<Koleksi> hasil = perpus.cariJudul(kataKunci);
+System.out.println("Hasil pencarian \"" + kataKunci + "\": " + hasil.size() + " koleksi");
+for (Koleksi k : hasil) {
+System.out.println(k);
+}
+}
 }

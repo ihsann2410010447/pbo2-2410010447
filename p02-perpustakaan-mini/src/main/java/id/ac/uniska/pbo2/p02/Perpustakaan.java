@@ -17,6 +17,20 @@ private final Map<String, Anggota> peminjam = new HashMap<>();
 public void tambah(Koleksi koleksi) {
 daftarKoleksi.add(koleksi);
 }
+public List<Koleksi> cariJudul(String kataKunci) {
+    List<Koleksi> hasil = new ArrayList<>();
+    if (kataKunci == null) {
+        return hasil;
+    }
+    String kunciLower = kataKunci.toLowerCase();
+    for (Koleksi k : daftarKoleksi) {
+        if (k.getJudul().toLowerCase().contains(kunciLower)) {
+            hasil.add(k);
+        }
+    }
+    return hasil;
+}
+
 /** Mencari koleksi berdasarkan kode. Mengembalikan null jika tidak ditemukan. */
 public Koleksi cari(String kode) {
 for (Koleksi k : daftarKoleksi) {
@@ -61,6 +75,7 @@ return jumlah;
 /** Salinan daftar yang tidak dapat diubah, agar data asli tetap terlindungi. */
 public List<Koleksi> getDaftarKoleksi() {
 return List.copyOf(daftarKoleksi);
+
 }
     
 }
