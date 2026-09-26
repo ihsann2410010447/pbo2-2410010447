@@ -1,0 +1,6 @@
+1.Pesan yang di dapat saat menjalankan aplikasi Perpustakaan adalah error karena koleksi adalah class abstract 
+2.karena methodnya berubah dianggap bukan @override dan juga Ketika @override di hapus maka program masih bisa jalan dan hanya dianggap sebagai method baru
+3.tetap berjalan karena judul "" adalah String kosong yang masih valid
+4.Aturan yang dilanggar adalah prinsip enkapsulasi, karena atribut status yang seharusnya private dapat diubah langsung dari luar class.
+
+
