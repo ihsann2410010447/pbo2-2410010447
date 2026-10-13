@@ -1,0 +1,20 @@
+1. Mengapa Null/Absolute Layout dihindari?
+
+Komponen memakai koordinat piksel tetap, sehingga tidak menyesuaikan saat jendela diubah ukurannya, tampilannya bisa rusak di platform, DPI, atau font berbeda, dan sulit dipelihara saat komponen ditambah atau dihapus.
+
+2. FlowLayout vs GridLayout saat dilebarkan
+FlowLayout: ukuran komponen tetap, hanya posisinya bergeser (dan turun baris jika sempit).
+GridLayout: semua sel dan komponen ikut melebar sama besar.
+3. Fungsi Weight X dan Fill
+Weight X: menentukan pembagian sisa ruang horizontal ke kolom (0 = tidak melebar, 1.0 = menerima sisa ruang).
+Fill: menentukan apakah komponen mengisi penuh cell-nya (None, Horizontal, Vertical, Both).
+
+Keduanya dipakai bersama agar text field ikut memanjang.
+
+4. Mengapa formPanel dibungkus isiPanel dan diletakkan di North?
+
+Agar form tidak ditarik memenuhi seluruh tinggi jendela. Di North, tinggi form tetap sesuai isinya, lebarnya tetap ikut melebar, dan ruang kosong berada di bawah sehingga baris form tetap rapat.
+
+5. Dua prinsip desain
+Konsistensi: label rata kiri di satu kolom, input sejajar dengan lebar sama, jarak antar baris seragam (Insets [0, 0, 6, 0]).
+Pengelompokan (proximity): label berdekatan dengan inputnya, radio button Jenis Anggota dikelompokkan dalam satu ButtonGroup, dan tombol Simpan/Hapus dipisah di tombolPane bagian South.

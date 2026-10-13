@@ -1,0 +1,28 @@
+1. Weight X namaField = 0.0, lalu jendela dilebarkan
+---------------------------------------------------
+Hasil : namaField tetap ikut melebar bersama isian lain.
+Sebab : Weight X dihitung per KOLOM (diambil nilai terbesar di kolom
+        itu). Isian lain di kolom 1 masih ber-Weight 1.0, jadi kolom
+        tetap melebar, dan Fill = Horizontal membuat namaField
+        memenuhi selnya.
+Catatan: namaField baru berhenti melebar jika Fill-nya diubah ke None
+        atau semua isian di kolom 1 ber-Weight 0.
+ 
+2. Direction formPanel dari North menjadi Center, lalu jendela ditinggikan
+--------------------------------------------------------------------------
+North  : form tetap menempel di atas, sisa tinggi kosong di bawah.
+Center : formPanel dipaksa mengisi seluruh tinggi isiPanel. Karena
+         Weight Y = 0, grid berada di tengah secara vertikal, sehingga
+         form tampak melayang di tengah, tidak lagi rapat di atas.
+Kesimpulan: North dipakai agar baris form tetap di atas.
+ 
+3. Hapus setMinimumSize(getSize()), lalu jendela dikecilkan sekecil mungkin
+---------------------------------------------------------------------------
+Hasil : kolom isian (text field, combo box, spinner) menyusut dan
+        terpotong lebih dulu, lalu tombol Batal/Simpan ikut terpotong.
+        Label di kiri bertahan lebih lama karena lebarnya sudah pas
+        dengan teksnya.
+Sebab : tanpa batas minimum, jendela bisa lebih kecil dari ukuran
+        yang dibutuhkan komponen. setMinimumSize(getSize()) setelah
+        pack() mencegah hal itu.
+ 

@@ -1,0 +1,12 @@
+1. flowPanel: Alignment = Center
+
+Yang berubah saat jendela dikecilkan: FlowLayout menyusun komponen dari kiri ke kanan. Saat lebar panel tidak cukup, tombol turun ke baris berikutnya. Dengan Alignment Center, setiap baris (termasuk baris sisa yang isinya lebih sedikit) berada di tengah panel. Pada Left, tombol selalu rata ke kiri.
+
+2.gridPanel: Rows = 0, Columns = 2
+
+Jumlah baris yang terbentuk adalah ⌈n / 2⌉, dengan n jumlah komponen di panel. Misalnya 4 tombol menjadi 2 baris, dan 5 tombol menjadi 3 baris (baris terakhir hanya terisi satu sel).
+
+3. boxPanel: maximumSize dan Vertical Strut
+
+Perubahan lebar tombol: BoxLayout menghormati maximumSize komponen. Tanpa pengaturan ini, tombol hanya selebar ukuran pilihannya (preferredSize), jadi lebarnya berbeda-beda sesuai teks. Dengan maximumSize = (32767, tinggi tombol), tombol boleh melebar sampai batas hampir tak terhingga. Pada BoxLayout sumbu Y, keempat tombol akan melebar memenuhi lebar panel dan seragam, serta ikut melebar atau menyempit saat jendela diubah ukurannya. Tingginya tetap, karena batas maksimumnya sama dengan tinggi tombol
+
