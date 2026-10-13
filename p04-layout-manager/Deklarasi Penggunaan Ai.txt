@@ -1,0 +1,10 @@
+Deklarasi Penggunaan Ai
+
+menggunakan Claude Ai
+
+1. tutorial tata letak panel di praktikum 2 P04
+2. tutorial menggunakan GridBagLayout
+3. membuat eksperimen 
+4. Serta membuatkan coding Place Holder di bagian FormPerpustakaan dan FormBiodata
+5. Menjelaskan penggunaan pada bagian costumize Layout
+
