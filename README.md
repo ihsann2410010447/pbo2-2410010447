@@ -12,7 +12,8 @@ P04-Hasil Keluaran Layout Manager
 https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Eksperimen%201%20p04.txt
 https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Eksperimen%202%20p04.txt
 https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Refleksi%20G%20-%20P04%20.txt
-
+Deklarasi Ai:
+https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Deklarasi%20Penggunaan%20Ai.txt
 P04-Hasil Keluaran Layout Manager
 # pbo2-2410010447
 P03-Komponen GUI Swing
