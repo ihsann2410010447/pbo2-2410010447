@@ -10,10 +10,10 @@ P04-Hasil Keluaran Layout Manager
 # pbo2-2410010447
 P03-Komponen GUI Swing
 
-Mode Terang
+Mode Gelap
 <img width="1152" height="757" alt="Screenshot 2026-10-02 194046" src="https://github.com/user-attachments/assets/e46249e1-f9ec-44c1-8eca-6607a82747ed" />
 
-Mode Gelap
+Mode Terang
 <img width="822" height="592" alt="Screenshot 2026-10-02 194040" src="https://github.com/user-attachments/assets/22b2552c-f89a-4c0a-bb77-984e4bd41e61" />
 
 Desaign dan Navigator FromTiketTravel
