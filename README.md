@@ -7,6 +7,10 @@ P04-Hasil Keluaran Layout Manager
 <img width="1790" height="638" alt="Tampilan saat dilebarkan" src="https://github.com/user-attachments/assets/8461a234-2475-48ed-aaa8-a42fa476b96d" />
 3.Hasil saat di jalankan
 <img width="1911" height="1022" alt="tampilan awal" src="https://github.com/user-attachments/assets/b931181b-de4b-4f6c-a3fb-fe47211ddda3" />
+
+##Eksperimen dan Refleksi P04
+https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Refleksi%20G%20-%20P04%20.txt
+
 P04-Hasil Keluaran Layout Manager
 # pbo2-2410010447
 P03-Komponen GUI Swing
