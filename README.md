@@ -19,7 +19,8 @@ https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager
 # Sketsa Jframe
 <img width="1243" height="1280" alt="6228970956516955380" src="https://github.com/user-attachments/assets/753aca41-92d4-429b-b246-fdcce0bf148b" />
 # Table rancangan
-<img width="1151" height="342" alt="Screenshot 2026-10-13 171956" src="https://github.com/user-attachments/assets/e087856a-6243-4485-a118-150a2c13c2dd" />
+<img width="511" height="287" alt="image" src="https://github.com/user-attachments/assets/ea18f214-e443-4619-ae9f-46e57b2af337" />
+
 
 P04-Hasil Keluaran Layout Manager
 # pbo2-2410010447
