@@ -1,0 +1,16 @@
+1.op-level container adalah jendela utama yang memiliki bingkai dan judul, serta menjadi wadah paling luar. Contohnya JFrame.
+Intermediate container adalah wadah di dalam jendela yang dipakai untuk mengelompokkan dan menata komponen. Contohnya JPanel.
+Atomic component adalah komponen yang berinteraksi langsung dengan pengguna dan tidak berfungsi sebagai wadah. Contohnya JButton.
+
+2.Radio button dipakai untuk memilih satu dari beberapa pilihan. Sifat "hanya satu yang terpilih" tidak otomatis ada pada JRadioButton. Sifat itu dibuat oleh ButtonGroup, yang membatalkan pilihan lama saat pilihan baru dipilih. Jika tidak berada dalam grup yang sama, setiap radio button berdiri sendiri, sehingga pengguna bisa memilih Laki-laki dan Perempuan sekaligus. Data yang dihasilkan menjadi tidak konsisten. Pada kode, hubungan ini terlihat dari baris jenisKelaminGroup.add(lakiRadio); di initComponents().
+
+3.Pilih JComboBox ketika pilihannya banyak (misalnya lima kota tujuan atau daftar program studi), karena daftarnya terlipat dan hemat ruang. Daftarnya juga mudah ditambah tanpa mengubah tata letak. Pilih JRadioButton ketika pilihannya sedikit, sekitar dua sampai empat (misalnya jenis kelamin atau kelas tiket), karena semua opsi langsung terlihat dan bisa dipilih dengan satu klik.
+
+4.Isi initComponents() dibuat otomatis oleh NetBeans dari rancangan di tab Design (file .form). Setiap kali rancangan berubah, NetBeans membuat ulang method ini, sehingga kode yang diketik di dalamnya akan hilang atau ditimpa. Kode di blok abu-abu itu juga tidak sinkron dengan .form. Kode tambahan ditulis di luar blok abu-abu, yaitu:
+
+di konstruktor, setelah initComponents() (misalnya placeholder dan setDefaultButton);
+di dalam event handler, di antara //GEN-FIRST dan //GEN-LAST;
+di method buatan sendiri, seperti tampilkanRingkasan() dan gantiTema();
+di method main.
+
+5.Look and feel dipasang ke komponen pada saat komponen dibuat. Komponen dibuat di initComponents(), yang dipanggil oleh konstruktor, yaitu saat new FormTiketTravel() dijalankan. Jika setup() dipanggil sesudahnya, komponen sudah terlanjur memakai tampilan lama (Metal). Karena itu setup() ditulis di main sebelum new ...().setVisible(true). Hal ini berbeda dengan gantiTema(), yang mengganti tema setelah form tampil dan karena itu memanggil FlatLaf.updateUI() agar komponen yang sudah ada ikut diperbarui.
