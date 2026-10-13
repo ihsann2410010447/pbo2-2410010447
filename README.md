@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/33368965/README.md)
+
 P04-Hasil Keluaran Layout Manager
 1.Desaign dan Navigator
 <img width="1233" height="875" alt="Desaign Dan Navigator" src="https://github.com/user-attachments/assets/a1e5504e-09e2-413b-8e29-94ee1fbbc920" />
