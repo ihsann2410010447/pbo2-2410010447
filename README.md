@@ -8,7 +8,9 @@ P04-Hasil Keluaran Layout Manager
 3.Hasil saat di jalankan
 <img width="1911" height="1022" alt="tampilan awal" src="https://github.com/user-attachments/assets/b931181b-de4b-4f6c-a3fb-fe47211ddda3" />
 
-##Eksperimen dan Refleksi P04
+# Eksperimen dan Refleksi P04
+https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Eksperimen%201%20p04.txt
+https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Eksperimen%202%20p04.txt
 https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Refleksi%20G%20-%20P04%20.txt
 
 P04-Hasil Keluaran Layout Manager
