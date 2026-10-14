@@ -25,7 +25,8 @@ https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager
 
 P04-Hasil Keluaran Layout Manager
 # pbo2-2410010447
-P03-Komponen GUI Swing
+
+# P03-Komponen GUI Swing
 
 Mode Gelap
 <img width="1152" height="757" alt="Screenshot 2026-10-02 194046" src="https://github.com/user-attachments/assets/e46249e1-f9ec-44c1-8eca-6607a82747ed" />
