@@ -38,4 +38,7 @@ Mode Terang
 Desaign dan Navigator FromTiketTravel
 <img width="1046" height="832" alt="Screenshot 2026-10-13 140946" src="https://github.com/user-attachments/assets/5caadfd7-5c2d-4753-bd46-461c24ca90ec" />
 
-P03-Komponen GUI Swing
+# Refleksi G
+https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p03-komponen-giu/P03-latihan%20Mandiri.txt
+
+# P03-Komponen GUI Swing
