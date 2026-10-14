@@ -15,6 +15,7 @@ https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager
 # Deklarasi Ai:
 https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Deklarasi%20Penggunaan%20Ai.txt
 #  Saling Menilai
+Dinilai oleh sopiya nabila
 https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Screenshot%202026-10-13%20165845.png
 # Sketsa Jframe
 <img width="1243" height="1280" alt="6228970956516955380" src="https://github.com/user-attachments/assets/753aca41-92d4-429b-b246-fdcce0bf148b" />
