@@ -4,6 +4,8 @@
  */
 package id.ac.uniska.pbo2.p04;
 
+import com.formdev.flatlaf.FlatLightLaf;
+
 /**
  *
  * @author User
@@ -17,14 +19,12 @@ public class FormBiodata extends javax.swing.JFrame {
      */
     public FormBiodata() {
         initComponents();
-        
-    // Kode tambahan: gaya huruf FlatLaf, placeholder, dan tombol default
-judulLabel.putClientProperty("FlatLaf.styleClass", "h2");
+   judulLabel.putClientProperty("FlatLaf.styleClass", "h2");
 keteranganLabel.putClientProperty("FlatLaf.style", "foreground: $Label.disabledForeground");
 dataDiriLabel.putClientProperty("FlatLaf.styleClass", "h4");
 kontakLabel.putClientProperty("FlatLaf.styleClass", "h4");
-emailField.putClientProperty("emailField.placeholderText", "nama@contoh.com");
-hpField.putClientProperty("hpField.placeholderText", "08xxxxxxxxxx");
+emailField.putClientProperty("JTextField.placeholderText", "nama@contoh.com");
+hpField.putClientProperty("JTextField.placeholderText", "08xxxxxxxxxx");
 getRootPane().setDefaultButton(simpanButton);
 pack(); // hitung ulang ukuran setelah gaya huruf berubah
 setMinimumSize(getSize()); // jendela tidak dapat dikecilkan melebihi ukuran awal
@@ -228,24 +228,7 @@ setLocationRelativeTo(null);
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+       FlatLightLaf.setup();
         java.awt.EventQueue.invokeLater(() -> new FormBiodata().setVisible(true));
     }
 

@@ -61,6 +61,8 @@ public class FormTiketTravel extends javax.swing.JFrame {
         temaToggle = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setFocusTraversalPolicyProvider(true);
 
         kotaCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Banjarbaru", "Martapura", "PalangkaRaya", "Samarinda", "Balikpapan", " " }));
 
