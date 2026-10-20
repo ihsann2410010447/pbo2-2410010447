@@ -1,7 +1,85 @@
 
 # P05-event-handling
+
+## Deklarasi Ai
+[Deklarasi Ai-P05.txt](https://github.com/user-attachments/files/33704415/Deklarasi.Ai-P05.txt)
+Deklarasi Ai
+
+Ai Yang di pakai: Claude Ai
+
+1. Menjelaskan Sebagian Materi yang masih saya kurang pahami
+2. membuat coding/ source koding di bagian FormAnggota Perpustakaan untuk melanjutkan pertemuan 4
+3. membantu membuat eksperimen dan table pengamatan
+
+
+
+## Eksperimen 4
+[eksperimen 4-p05.txt](https://github.com/user-attachments/files/33704321/eksperimen.4-p05.txt)
+
+
+1. Pesan "kali" tercetak 2 kali setiap tombol diklik.
+   Event dari Events dan lambda di konstruktor sama-sama mendaftarkan
+   ActionListener pada kaliButton, jadi keduanya dipanggil.
+   Satu tombol sebaiknya satu cara karena aksi berjalan dobel, kode
+   tersebar di dua tempat sehingga sulit dilacak, dan urutan eksekusi
+   antar-listener tidak boleh diandalkan.
+
+2. Tombol % (modulus).
+   Tab Design:
+   - Tambah JButton dari Palette, text "%".
+   - Ganti nama variabel menjadi modButton.
+   - Rapikan posisi dan ukuran.
+   Tab Source:
+   - Buat handler actionPerformed untuk modButton (satu cara saja).
+   - Tambah operasi hasil = a % b;
+   - Tangani pembagi nol (int: ArithmeticException, double: NaN).
+   - Jangan edit blok initComponents() yang berwarna abu-abu.
+
+3. Kursor langsung di isian pertama karena handler Hapus memanggil
+   setText("") lalu requestFocus() / requestFocusInWindow() pada isian
+   pertama. Tanpa itu, fokus tetap di tombol dan pengguna harus
+   mengklik isian dulu.
+
+## Eksperimen 3
+
+
+1. Pesan "item berubah" tercetak 2 kali setiap pilihan diganti.
+   ItemListener dipanggil dua kali: sekali untuk DESELECTED (item lama)
+   dan sekali untuk SELECTED (item baru). Pemeriksaan getStateChange()
+   == SELECTED sebelumnya menyaring pemanggilan pertama.
+
+2. Hasil terlambat satu karakter karena saat keyPressed dijalankan,
+   karakter yang baru ditekan belum masuk ke teks field. getText()
+   masih mengembalikan isi sebelumnya (mengetik "25" baru "2" yang
+   dikonversi). Pada keyReleased teks sudah terbarui, sehingga sinkron.
+
+3. Di jendela Output muncul stack trace:
+   java.lang.NumberFormatException: For input string: "a"
+   (atau "empty String" jika isian kosong).
+   Aplikasi tidak tertutup, tetapi label hasil tidak diperbarui dan
+   error terus muncul setiap tombol dilepas. Karena itu try-catch
+   diperlukan untuk menangani input yang tidak valid.[eksperiman 3-p05.txt](https://github.com/user-attachments/files/33704304/eksperiman.3-p05.txt)
+
+
+## Tabel Pengamatan 
+<img width="607" height="393" alt="Screenshot 2026-10-20 122647" src="https://github.com/user-attachments/assets/b0a54511-c258-4bfa-a347-b8165afae768" />
+
+
+## Event Tombol Daftar
+<img width="1911" height="1013" alt="Screenshot 2026-10-20 123440" src="https://github.com/user-attachments/assets/1f67c92c-fb31-4724-8195-59f065f5d71d" />
+
+
+
+## Peta Event
+<img width="812" height="160" alt="Screenshot 2026-10-20 124423" src="https://github.com/user-attachments/assets/284a01f2-f9ce-4447-8141-b4fc92da9f9a" />
+<img width="695" height="33" alt="Screenshot 2026-10-20 124437" src="https://github.com/user-attachments/assets/92c114cf-b4ec-426b-86d7-23f7e4067455" />
+
 <img width="640" height="602" alt="Screenshot 2026-10-20 124647" src="https://github.com/user-attachments/assets/1a3ee467-4e23-4df5-8980-7324ffd8a7f2" />
+
+## Dialog Konfirmasi Keluar
 <img width="647" height="596" alt="Screenshot 2026-10-20 124721" src="https://github.com/user-attachments/assets/62528c1c-8dd1-4d4b-9ceb-683ef178d122" />
+
+## Dialog Tampilan Ringkasan
 <img width="505" height="563" alt="Screenshot 2026-10-20 124703" src="https://github.com/user-attachments/assets/dc83a1ab-bf67-481f-980f-709c5e89453f" />
 # P05-event-handling
 
