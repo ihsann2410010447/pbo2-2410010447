@@ -1,6 +1,11 @@
-[Eksperimen 2 p04.txt](https://github.com/user-attachments/files/33700144/Eksperimen.2.p04.txt)[Eksperimen 1 p04.txt](https://github.com/user-attachments/files/33700132/Eksperimen.1.p04.txt)
 
-P04-Hasil Keluaran Layout Manager
+# P05-event-handling
+<img width="640" height="602" alt="Screenshot 2026-10-20 124647" src="https://github.com/user-attachments/assets/1a3ee467-4e23-4df5-8980-7324ffd8a7f2" />
+<img width="647" height="596" alt="Screenshot 2026-10-20 124721" src="https://github.com/user-attachments/assets/62528c1c-8dd1-4d4b-9ceb-683ef178d122" />
+<img width="505" height="563" alt="Screenshot 2026-10-20 124703" src="https://github.com/user-attachments/assets/dc83a1ab-bf67-481f-980f-709c5e89453f" />
+# P05-event-handling
+
+# P04-Hasil Keluaran Layout Manager
 1.Desaign dan Navigator
 <img width="1233" height="875" alt="Desaign Dan Navigator" src="https://github.com/user-attachments/assets/a1e5504e-09e2-413b-8e29-94ee1fbbc920" />
 
