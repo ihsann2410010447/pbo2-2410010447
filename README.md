@@ -84,6 +84,8 @@ AI: Claude Ai
  2.membantu saya untuk beberapa letak panel di Frame yang masih saya tidak pahami 
  3.membantu saya dibagian layout seperti di bagian gridbaglayout 
 
+
+
 #  Saling Menilai
 <img width="673" height="511" alt="Screenshot 2026-10-13 165845" src="https://github.com/user-attachments/assets/1f75fecd-952f-47c6-ae29-68519fd18522" />
 
