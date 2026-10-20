@@ -81,6 +81,7 @@ Ai Yang di pakai: Claude Ai
 
 ## Dialog Tampilan Ringkasan
 <img width="505" height="563" alt="Screenshot 2026-10-20 124703" src="https://github.com/user-attachments/assets/dc83a1ab-bf67-481f-980f-709c5e89453f" />
+
 # P05-event-handling
 
 # P04-Hasil Keluaran Layout Manager
