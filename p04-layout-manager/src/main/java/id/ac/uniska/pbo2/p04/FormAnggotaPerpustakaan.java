@@ -4,6 +4,8 @@
  */
 package id.ac.uniska.pbo2.p04;
 
+import com.formdev.flatlaf.FlatLightLaf;
+
 /**
  *
  * @author User
@@ -17,6 +19,11 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
      */
     public FormAnggotaPerpustakaan() {
         initComponents();
+        
+       namaField.putClientProperty("JTextField.placeholderText", "Masukkan nama lengkap");
+    npmField.putClientProperty("JTextField.placeholderText", "Masukkan NPM");
+    emailHpField.putClientProperty("JTextField.placeholderText", "Masukkan email atau no. HP");
+
     }
 
     /**
@@ -31,8 +38,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
 
         anggotaGroup = new javax.swing.ButtonGroup();
         tombolPane = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        daftarButton = new javax.swing.JButton();
+        batalButton = new javax.swing.JButton();
         isiPane = new javax.swing.JPanel();
         formPanel = new javax.swing.JPanel();
         namaLabel = new javax.swing.JLabel();
@@ -55,16 +62,23 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Form Anggota Perpustakaan");
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(new java.awt.BorderLayout(8, 8));
 
         tombolPane.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 16, 16));
         tombolPane.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
-        jButton1.setText("Simpan");
-        tombolPane.add(jButton1);
+        daftarButton.setText("Daftar");
+        daftarButton.addActionListener(this::daftarButtonActionPerformed);
+        tombolPane.add(daftarButton);
 
-        jButton2.setText("Hapus");
-        tombolPane.add(jButton2);
+        batalButton.setText("Batal");
+        batalButton.addActionListener(this::batalButtonActionPerformed);
+        tombolPane.add(batalButton);
 
         getContentPane().add(tombolPane, java.awt.BorderLayout.PAGE_END);
 
@@ -125,6 +139,12 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 6, 0);
         formPanel.add(namaField, gridBagConstraints);
+
+        npmField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                npmFieldKeyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
@@ -181,7 +201,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 6, 0);
         formPanel.add(jScrollPane1, gridBagConstraints);
 
-        setujuCheck.setText("Setuju");
+        setujuCheck.setText("Setuju dengan tata tertib perpustakaan");
+        setujuCheck.addItemListener(this::setujuCheckItemStateChanged);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 8;
@@ -205,28 +226,66 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void setujuCheckItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_setujuCheckItemStateChanged
+        // TODO add your handling code here:
+         daftarButton.setEnabled(setujuCheck.isSelected());
+    }//GEN-LAST:event_setujuCheckItemStateChanged
+
+    private void batalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalButtonActionPerformed
+        // TODO add your handling code here:
+         namaField.setText("");
+    npmField.setText("");
+    emailHpField.setText("");
+    alamatArea.setText("");
+    programCombo.setSelectedIndex(0);
+    mahasiswaRadio.setSelected(true);
+    setujuCheck.setSelected(false);   // otomatis menonaktifkan simpanButton
+    npmLabel.setText("0 dari 10 digit");
+    npmField.requestFocus();
+    }//GEN-LAST:event_batalButtonActionPerformed
+
+    private void daftarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarButtonActionPerformed
+        // TODO add your handling code here:
+         String jenis = "Mahasiswa";
+    if (dosenRadio.isSelected()) {
+        jenis = "Dosen";
+    } else if (umumRadio.isSelected()) {
+        jenis = "Umum";
+    }
+
+    String ringkasan = "Nama Lengkap : " + namaField.getText() + "\n"
+                     + "NPM          : " + npmField.getText() + "\n"
+                     + "Program Studi: " + programCombo.getSelectedItem() + "\n"
+                     + "Jenis Anggota: " + jenis + "\n"
+                     + "Email/No.HP  : " + emailHpField.getText() + "\n"
+                     + "Alamat       : " + alamatArea.getText();
+
+    javax.swing.JOptionPane.showMessageDialog(
+        this, ringkasan, "Ringkasan Pendaftaran",
+        javax.swing.JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_daftarButtonActionPerformed
+
+    private void npmFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_npmFieldKeyReleased
+        // TODO add your handling code here:
+        int jumlah = npmField.getText().length();
+    npmLabel.setText(jumlah + " dari 10 digit");
+    }//GEN-LAST:event_npmFieldKeyReleased
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // TODO add your handling code here:
+          int pilihan = javax.swing.JOptionPane.showConfirmDialog(
+        this, "Yakin ingin menutup aplikasi?", "Konfirmasi",
+        javax.swing.JOptionPane.YES_NO_OPTION);
+    if (pilihan == javax.swing.JOptionPane.YES_OPTION) {
+        System.exit(0);
+    }
+    }//GEN-LAST:event_formWindowClosing
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+      FlatLightLaf.setup();
         java.awt.EventQueue.invokeLater(() -> new FormAnggotaPerpustakaan().setVisible(true));
     }
 
@@ -235,12 +294,12 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     private javax.swing.JLabel alamatLabel;
     private javax.swing.ButtonGroup anggotaGroup;
     private javax.swing.JLabel anggotaLabel;
+    private javax.swing.JButton batalButton;
+    private javax.swing.JButton daftarButton;
     private javax.swing.JRadioButton dosenRadio;
     private javax.swing.JTextField emailHpField;
     private javax.swing.JPanel formPanel;
     private javax.swing.JPanel isiPane;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton mahasiswaRadio;
     private javax.swing.JTextField namaField;
