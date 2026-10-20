@@ -78,9 +78,15 @@ Konsistensi: label rata kiri di satu kolom, input sejajar dengan lebar sama, jar
 Pengelompokan (proximity): label berdekatan dengan inputnya, radio button Jenis Anggota dikelompokkan dalam satu ButtonGroup, dan tombol Simpan/Hapus dipisah di tombolPane bagian South.
 
 # Deklarasi Ai:
-https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Deklarasi%20Penggunaan%20Ai.txt
+AI: Claude Ai
+
+ 1.menjelaskan beberapa Praktikum Yang masih saya tidak pahami 
+ 2.membantu saya untuk beberapa letak panel di Frame yang masih saya tidak pahami 
+ 3.membantu saya dibagian layout seperti di bagian gridbaglayout 
+
 #  Saling Menilai
-https://github.com/ihsann2410010447/pbo2-2410010447/blob/main/p04-layout-manager/Screenshot%202026-10-13%20165845.png
+<img width="673" height="511" alt="Screenshot 2026-10-13 165845" src="https://github.com/user-attachments/assets/1f75fecd-952f-47c6-ae29-68519fd18522" />
+
 
 # Sketsa Jframe
 <img width="1243" height="1280" alt="6228970956516955380" src="https://github.com/user-attachments/assets/753aca41-92d4-429b-b246-fdcce0bf148b" />
