@@ -1,4 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/33699953/README.1.md)
+
 
 P04-Hasil Keluaran Layout Manager
 1.Desaign dan Navigator
@@ -27,14 +27,44 @@ P04-Hasil Keluaran Layout Manager
 # pbo2-2410010447
 P03-Komponen GUI Swing
 
-Mode Gelap
+# Mode Gelap
 <img width="1152" height="757" alt="Screenshot 2026-10-02 194046" src="https://github.com/user-attachments/assets/e46249e1-f9ec-44c1-8eca-6607a82747ed" />
 
 
-Mode Terang
+# Mode Terang
 <img width="822" height="592" alt="Screenshot 2026-10-02 194040" src="https://github.com/user-attachments/assets/22b2552c-f89a-4c0a-bb77-984e4bd41e61" />
 
-Desaign dan Navigator FromTiketTravel
+# Desaign dan Navigator FromTiketTravel
 <img width="1046" height="832" alt="Screenshot 2026-10-13 140946" src="https://github.com/user-attachments/assets/5caadfd7-5c2d-4753-bd46-461c24ca90ec" />
+
+# Refleksi G
+
+
+1. Top-level container, intermediate container, atomic component
+   - Top-level container: wadah paling luar yang punya jendela sendiri
+     dan menjadi akar hierarki. Contoh: JFrame.
+   - Intermediate container: wadah di dalam top-level untuk
+     mengelompokkan dan mengatur tata letak komponen. Contoh: JPanel.
+   - Atomic component: komponen dasar yang berinteraksi langsung dengan
+     pengguna dan tidak menampung komponen lain. Contoh: JButton.
+
+2. JRadioButton perlu buttonGroup yang sama agar saling eksklusif:
+   memilih satu otomatis membatalkan yang lain. Tanpa grup, beberapa
+   radio bisa terpilih bersamaan.
+
+3. Pilih JComboBox jika pilihan banyak atau ruang form terbatas
+   (contoh: program studi). Pilih JRadioButton jika pilihan sedikit
+   (2-4) dan sebaiknya terlihat sekaligus (contoh: jenis anggota).
+
+4. initComponents() adalah kode otomatis NetBeans yang dibuat ulang
+   setiap tab Design berubah, sehingga edit manual akan tertimpa atau
+   merusak sinkronisasi Design dan Source. Kode tambahan ditulis di
+   konstruktor setelah initComponents(), di method handler event, atau
+   di method buatan sendiri di luar blok abu-abu.
+
+5. FlatLightLaf.setup() harus dipanggil sebelum form dibuat karena look
+   and feel dipasang saat komponen dibuat. Jika dipanggil setelahnya,
+   komponen tetap memakai tampilan lama. Letakkan di awal main, sebelum
+   new FormAnggotaPerpustakaan().setVisible(true).
 
 # P03-Komponen GUI Swing
