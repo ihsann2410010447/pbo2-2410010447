@@ -71,7 +71,15 @@ Ai Yang di pakai: Claude Ai
 
 
 ## Peta Event
-<img width="812" height="160" alt="Screenshot 2026-10-20 124423" src="https://github.com/user-attachments/assets/284a01f2-f9ce-4447-8141-b4fc92da9f9a" />
+| Komponen | Menu Events | Aksi |
+|---|---|---|
+| Kotak centang setuju | Item: itemStateChanged | Tombol Daftar hanya aktif jika dicentang |
+| Tombol Batal | Action: actionPerformed | Kosongkan semua isian dan kembalikan fokus ke NPM |
+| Tombol Daftar | Action: actionPerformed | Tampilkan ringkasan data dengan JOptionPane |
+| Isian NPM | Key: keyReleased | Label kecil menampilkan jumlah digit, misalnya "8 dari 10 digit" |
+| Form (JFrame) | Window: windowClosing | Minta konfirmasi sebelum aplikasi ditutup |
+
+
 <img width="695" height="33" alt="Screenshot 2026-10-20 124437" src="https://github.com/user-attachments/assets/92c114cf-b4ec-426b-86d7-23f7e4067455" />
 
 <img width="640" height="602" alt="Screenshot 2026-10-20 124647" src="https://github.com/user-attachments/assets/1a3ee467-4e23-4df5-8980-7324ffd8a7f2" />
