@@ -4,7 +4,8 @@
 <img width="1317" height="782" alt="image" src="https://github.com/user-attachments/assets/17e5977a-491e-4ec8-8e78-45dbb72ae467" />
 
 ## Tangkapan Layar dengan Pesan Kesalahan
-<img width="607" height="627" alt="image" src="https://github.com/user-attachments/assets/e336c536-69f3-4160-b519-5412fc9e2d78" />
+<img width="466" height="581" alt="image" src="https://github.com/user-attachments/assets/9fdd0a73-8869-4161-8d08-f314fe2fe94f" />
+
 
 
 ## Deklarasi Ai
