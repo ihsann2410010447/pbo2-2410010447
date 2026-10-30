@@ -1,4 +1,26 @@
+# P06-Validasi_Input_dan_Kegunaan
 
+## Tangkapan Layar Label Pesan
+<img width="1317" height="782" alt="image" src="https://github.com/user-attachments/assets/17e5977a-491e-4ec8-8e78-45dbb72ae467" />
+
+## Tangkapan Layar dengan Pesan Kesalahan
+<img width="607" height="627" alt="image" src="https://github.com/user-attachments/assets/e336c536-69f3-4160-b519-5412fc9e2d78" />
+
+
+## Deklarasi Ai
+Claude Ai
+
+Digunakan untuk menjelaskan beberapa langkah yang masih saya tidak pahami
+
+## Eksperimen 4
+1. NPM: Huruf tidak bisa dimasukkan karena program hanya mengizinkan angka. Baris penyebabnya adalah evt.consume().
+2. Email: Pesan kesalahan muncul saat menekan Tab karena kolom email kehilangan fokus dan format email tidak valid.
+3. Nama: Tidak muncul pesan kesalahan karena validasi Nama tidak dijalankan saat kolom kehilangan fokus.
+4. Daftar: Fokus kembali ke kolom Nama karena merupakan isian pertama yang wajib diisi.
+5. Alt + N: Fokus berpindah ke kolom Nama. Diatur menggunakan properti DisplayedMnemonic dan LabelFor.
+6. Batal: Data tetap ada karena memilih No berarti membatalkan proses penghapusan data.
+
+# P06-Validasi_Input_dan_Kegunaan
 # P05-event-handling
 
 ## Deklarasi Ai
