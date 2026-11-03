@@ -1,3 +1,35 @@
+
+# P07-mini-Proyek
+## Deklarasi Ai
+Claude Ai 
+Chat Gpt
+
+Membantu membuat Source Code di bagian KatalogBuku dan DialogBuku
+
+## Tautan Video Demo Katalog Buku
+https://drive.google.com/file/d/1VNPYTsvW8ZUDyiiyRHum32v_M8et-E-4/view?usp=drive_link
+# P07-mini-proyek
+
+
+# P07-Label-dan-Menu
+
+## Deklarasi Ai
+Claude Ai
+Menjelaskan beberapa Langkah yang saya masih kurang Pahami dan membantu untuk memperbaiki sebagian source di Bagian p07-label-dan-menu
+## Eksperimen 5
+1: Tidak. Tabel tidak diberi tahu ada baris baru, jadi tampilannya baru berubah setelah dimuat ulang (misalnya lewat pencarian).
+
+2: Nama kontak yang salah (kontak di baris 0 daftar asli, bukan Ahmad Fauzi). getSelectedRow() mengembalikan indeks tampilan hasil filter, sedangkan model memakai indeks data asli. Perlu convertRowIndexToModel.
+
+3: Jendela utama bisa diklik saat dialog terbuka, dan kontak tidak ditambahkan. Dialog tidak lagi modal, sehingga kode pemanggil jalan terus tanpa menunggu hasil dialog.
+
+4: Menu Ubah dan Hapus nonaktif saat tidak ada baris dipilih, dan item menu nonaktif mengabaikan accelerator-nya.
+
+5: Baris hapusItem.setAccelerator(...) berubah dari KeyStroke VK_D + CTRL_DOWN_MASK menjadi VK_DELETE dengan modifier 0.
+
+6: NullPointerException, karena model masih null saat initComponents() memakainya. Model harus dibuat sebelum initComponents().
+# P07-Label-dan-Menu
+
 # P06-Validasi_Input_dan_Kegunaan
 
 ## Tangkapan Layar Label Pesan
@@ -6,6 +38,21 @@
 ## Tangkapan Layar dengan Pesan Kesalahan
 <img width="466" height="581" alt="image" src="https://github.com/user-attachments/assets/9fdd0a73-8869-4161-8d08-f314fe2fe94f" />
 
+## Tabel Riview
+
+| No. | Temuan dari Teman | Perbaikan yang Dilakukan | Commit |
+|---|---|---|---|
+| 1 | Input NPM berjalan dengan baik dan hanya menerima angka. | Tidak ada perbaikan. | Tidak ada |
+| 2 | Validasi email berjalan dengan baik. | Tidak ada perbaikan. | Tidak ada |
+| 3 | Isian Nama berfungsi dengan baik. | Tidak ada perbaikan. | Tidak ada |
+| 4 | Tombol Daftar berjalan dengan baik. | Tidak ada perbaikan. | Tidak ada |
+| 5 | Tombol Batal menampilkan konfirmasi dengan benar. | Tidak ada perbaikan. | Tidak ada |
+
+
+## Peer Riview
+### Dinilai Oleh Sopiya Nabila
+<img width="1053" height="663" alt="image" src="https://github.com/user-attachments/assets/1b220d0c-452f-43da-9bfa-59af549a69b8" />
+<img width="1087" height="372" alt="image" src="https://github.com/user-attachments/assets/42e1a63f-3661-470d-a2bd-5fdb97838075" />
 
 
 ## Deklarasi Ai
